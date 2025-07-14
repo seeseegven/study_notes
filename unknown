@@ -6,8 +6,6 @@ Binary files /dev/null and b/ComfyUI_00001_.png differ
 [1mnew file mode 100644[m
 [1mindex 0000000..7f09f84[m
 [1m--- /dev/null[m
-[1m+++ b/git_learn.md[m
-[36m@@ -0,0 +1,9 @@[maf
 [32m+[m[32m# Git笔记[m
 [32m+[m[32m<font size=6>使用<font size=8>***git init***</font>来初始化仓库</font>[m
 [32m+[m[32m<font size=6>使用<font size=8>***git status***</font>来获取文件的状态，<font size=8>***git status -s*** or ***git status --short***</font>获取简短信息，有两列，左边暂存区，右边工作区</font>[m
