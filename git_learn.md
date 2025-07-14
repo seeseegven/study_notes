@@ -20,3 +20,9 @@
 <font size=6>使用<font size=8>***git commit -m ""***</font>来提交变更，引号内为提交信息</font>
 
 <font size=6>使用<font size=8>***git commit -a -m ""***</font>来跳过暂存区提交</font>
+
+<font size=6>使用<font size=8>***git rm***</font>来删除文件（更改且未add的不行）括号情况加上<font size=8>***-f***</font></font>
+
+<font size=6>使用<font size=8>***git rm --cached <file>***</font>来移除暂存区的文件，而保留在工作区</font>
+
+<font size=6>使用<font size=8>***git mv file_from file_to***</font>来重命名文件</font>
