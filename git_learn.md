@@ -5,5 +5,18 @@
 
 若将文件修改但未提交，那么在暂存区和未暂存区都有记录，一个是旧的，一个是新的
 
-<font size=6>使用<font size=8>***cat .gitignore***</font>来忽略一些文件</font>
+<font size=6>使用<font size=8>***cat .gitignore***</font>来忽略一些文件，例如</font>
 
+
+    $ cat .gitignore
+    * .[oa]  #忽略所有以.a、.o结尾文件
+    * ~    # 忽略所有以 ~ 结尾的文件
+
+<font size=6>使用<font size=8>***git diff***</font>来输出修改和暂存文件的差异（增加，减少）了什么</font>
+<font size=6>使用<font size=8>***git diff --staged***</font>来输出暂存和上次提交的差异（增加，减少）了什么</font>
+
+<font size=6>使用<font size=8>***git commit***</font>来提交变更（不推荐，麻烦），没有提交信息将会取消提交</font>
+
+<font size=6>使用<font size=8>***git commit -m ""***</font>来提交变更，引号内为提交信息</font>
+
+<font size=6>使用<font size=8>***git commit -a -m ""***</font>来跳过暂存区提交</font>
