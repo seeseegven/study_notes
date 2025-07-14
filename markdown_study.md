@@ -132,3 +132,16 @@ See the section on [`code`](#code).
 <font size=5>我是尺寸</font>
 <font size=10>我是尺寸</font>
 <font face="逐浪立楷" color=green size=10>我是逐浪立楷，绿色，尺寸为5</font>
+
+# 创建表格
+>| Syntax      | Description |
+| ----------- | ------ |
+| Header      | Title       |
+| Paragraph   | Text      |
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+## 左，右，左右，加':'选择对齐方式
+
