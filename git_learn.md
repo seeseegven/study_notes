@@ -62,4 +62,25 @@
 <font size=6>使用<font size=8>***git remote rename (remote name) (new name)***</font>来重命名远程仓库</font>
 
 <font size=6>使用<font size=8>***git remote rm (remote name)***</font>来删除远程仓库</font>
-                               
+                        
+|git tag|function|
+|-------|-------|
+|none|show all tags|
+|-l "tagname"|show tags with tagname|
+|-a "tagname"|create new tag|
+|-d "tagname"|delete tag|
+|-m "message"|add message to tag|
+|tagname|create tag|
+|-a tagname 部分校验和|add tag with partial checksum|
+|git show tagname|show tag information|
+|git push origin tagname|push tag to remote repository|
+|git push origin --tags|push all tags to remote repository|
+
+<font size=6>使用<font size=8>***git branch (branch name)***</font>来创建新分支</font>
+
+
+<font size=6>使用<font size=8>***git checkout (branch name)***</font>来切换分支</font>
+
+<font size=6>使用<font size=8>***git checkout -b (branch name)***</font>来创建新分支并切换</font>
+
+<font size=6>使用<font size=8>***git merge (branch name)***</font>来合并分支到当前分支 </font>

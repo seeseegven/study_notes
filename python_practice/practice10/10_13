@@ -1,0 +1,41 @@
+import json
+
+def get_sorted_username():
+    '''获取已存储名字'''
+    filename = 'username.json'
+    try:
+        with open(filename) as f:
+            username = json.load(f)
+            print(username,'\n',f)
+            return username
+        
+    except FileNotFoundError:
+
+        return None
+    
+    except json.decoder.JSONDecodeError:
+         return []
+
+def get_new_username(filename, usernames):
+    username = input('enter your name:')
+    usernames.append(username)
+    with open(filename, 'w') as f:
+        json.dump(usernames, f)
+    return usernames
+
+def greet_user():
+    unchecked_username = input('enter your name1:')
+    username = get_sorted_username()
+    flag = 0
+    for i in username:
+        if i == unchecked_username:
+            flag = 1
+            break
+    if not username or not flag:
+        get_new_username('username.json', username)
+        print(f'We will remember you, {unchecked_username}.')
+        
+    else:
+        print(f'Welcome back, {unchecked_username}!')
+
+greet_user()
