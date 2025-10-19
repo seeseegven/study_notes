@@ -84,3 +84,32 @@
 <font size=6>使用<font size=8>***git checkout -b (branch name)***</font>来创建新分支并切换</font>
 
 <font size=6>使用<font size=8>***git merge (branch name)***</font>来合并分支到当前分支 </font>
+
+<font size=6>使用<font size=8>***git remote add origin git@github.com:repo.git***</font>来使用ssh链接远程仓库</font>
+
+<font size=6>使用<font size=8>***git push -u origin master***</font>来建立上游分支master并推送 </font>
+
+<font size=6>使用<font size=8>***git restore filename***</font>来放弃工作区对某一文件的修改 </font>
+
+<font size=6>使用<font size=8>***git restore .***</font>来放弃整个工作区 </font>
+
+<font size=6>使用<font size=8>***git restore --staged filename***</font>来撤出暂存区 </font>
+
+<font size=6>使用<font size=8>***git restore --staged --worktreee filename***</font>来放弃工作区和暂存区提交 </font>
+
+<font size=6>使用<font size=8>***git reset --soft HEAD~1*** 或 ***commit_id***</font>来撤销1次提交或回到指定提交 </font>
+
+<font size=6>使用<font size=8>***git reset --mixed***</font>来撤销提交和暂存区文件，且是reset命令默认的参数 </font>
+
+<font size=6>使用<font size=8>***git reset --hard***</font>来回退上一个提交，丢弃工作区和暂存区</font>
+
+|git|<font size=6>revert|
+|---|-------------------|
+|参数|作用|
+|git revert commit|还原C|
+|git revert HEAD~2||
+|--no-commit|反向提交只暂存不自动提交|
+|--edit|修改默认提交信息|
+|--abort|冲突时放弃整个revert|
+
+# git ignore注释要单独写一行，不然不会生效。

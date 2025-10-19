@@ -1,0 +1,32 @@
+T2.33:
+a = 42; 合法
+b = 42; 合法
+c = 42; 合法
+d = 42;
+e = 42; d和e是指针，非法
+g = 42; 非法
+
+T2.35:
+const int i = 42;
+auto j = i;
+const auto &k = i;
+auto *p = &i;
+const auto j2 = i, &k2 = i;
+i是const int，j是int，k是const int引用，p是const int 指针，j2是const int，k2是const int引用
+
+T2.36:
+int a = 3, b = 4;
+decltype(a) c = a;
+decltype(b) d = a;
+++c; ++d;
+abcd都是int,a=3,b=4,c=4,d=4
+
+T2.37:
+int a = 3, b = 4;
+decltype(a) c = a;
+decltype(a = b) d = a;     赋值返回左边的引用，如int i;i=x,返回int&
+abc都是int,d是int&,a=3,b=4,c=3,d=3
+
+T2.38:
+关于顶层const不同。int a=3;auto b = a <==> decltype c = a.
+const int a=3;auto b = a和decltype c=a不等价，b是int，c是const int

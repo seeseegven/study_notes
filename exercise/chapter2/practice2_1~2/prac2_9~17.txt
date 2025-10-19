@@ -1,0 +1,59 @@
+prac2_2也在这里，当时没分清楚
+
+
+T2.9:
+std::cin >> int input_value: 错误，>>右边必须是变量名，而非定义变量的语句
+int input_value; std::cin >> input_value;才对 
+int i =  { 3.14 } :错误，{}初始化丢失精度会报错（答案说是引发警告，可能精度丢失没那么多）
+double salary = wage = 9999.99 ：不能在定义的时候连续赋值
+int i = 3.14 ：对,i=3（答案说引发警告）
+
+T2.10:
+std::string global_str;
+int global_int;
+int main(){
+    int local_int;
+    std::string local_str;
+}
+global_str = ''，string函数内外定义都为空串
+global_int = 0
+local_int未初始化，local_str为""
+
+T2.11:
+extern int ix = 1024; 定义
+int iy; 声明并定义
+extern nt iz; 声明
+
+T2.12:
+int double = 3.14; 非法
+int _; 合法
+int catch-22; 非法
+int 1_or_2 = 1; 非法
+duble Double = 3.14; 合法
+
+T2.13:
+j = 100
+
+T2.14:
+100 55
+
+T2.15:
+int ival = 1.01; 合法
+int &rvall = 1.01; 非法
+int &rval2 = ival; 合法
+int &rval3; 非法
+
+T2.16:
+int i = 0, &r1 = i;
+double d = 0, &r2 = d;
+
+r2 = 3.14159; 合法，把d变成3.14159
+r2 = r1; 合法，把i的值赋给了d
+i = r2; 合法，i=0=r1
+r1 = d; 合法，i=r1=0
+
+T2.17:
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " <<ri;
+10 10

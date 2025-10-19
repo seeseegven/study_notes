@@ -1,0 +1,77 @@
+T2.19:
+指针可以修改指向，而引用不能改变；
+指针可以初始为0（空指针），引用必须要和东西绑定
+
+T2.20：
+int i = 42;
+int *p1 = &i;
+*p1 = *p1 * *p1;
+把p1指向的值改为其平方，类似于i = i * i
+
+T2.21:
+int i = 0;
+double*dp = &i; 非法，类型不对
+int *ip = i; 非法，不是地址
+int *p = &i; 合法
+
+T2.22:
+if (p) // 如果p不是空指针（有指向），执行
+if (*p) // 如果p指向的内容不是0，执行
+
+T2.23:
+if (p) //
+
+T2.24:
+void符合所有类型，而long只能对应long，但是前面是int类型
+
+T2.25:
+int* ip,i, &r=i; ip是指针，i是int型，r是引用 
+int i, *ip = 0; i是整形，ip是空指针
+int* ip,ip2; ip是指针，ip2是整形
+
+T2.26:
+const int buf; 非法
+int cnt = 0; 合法
+const int sz = cnt; 合法
+++cnt; ++sz; ++sz非法，++cnt合法
+
+T2.27:
+int i = -1, &r = 0; 非法
+int *const p2 = &i2; 合法
+const int i = -1, &r = 0; 合法
+const int *const p3 = &i2; 合法
+const int *p1 = &i2; 合法
+const int &const r2; 非法
+const int i2 = i, &r = i; 合法
+
+T2.28:
+int i, *const cp; 非法
+int *p1, *const p2; 非法
+const int ic, &r = ic; 非法，ic时常量，必须被初始化        
+const int *const p3; 非法
+const int *p; 合法
+
+T2.29:
+i = ic; 合法
+p1 = p3; 非法
+p1 = &ic; 非法
+p3 = &ic; 非法，p3是常量指针不能被赋值
+p2 = p1; 非法
+ic = *p3; 非法，ic是常量，不能被赋值
+非法都是常量赋给了非常量
+
+T2.30:
+const int v2 = 0; 顶层
+int v1 = v2; 
+int *p1 = &v1, &r1 = v1; 
+const int *p2 = &v2, *const p3 = &i, &r2 = v2; p2底层，p3顶层，r2底层
+
+T2.31:
+r1 = r2; 合法
+p1 = p2; 非法
+p2 = p1; 合法
+p1 = p3; 非法
+p2 = p3; 合法
+
+T2.32:
+int null = 0, *p = null;错误，指针指向地址

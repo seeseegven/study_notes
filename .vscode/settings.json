@@ -68,5 +68,12 @@
     "editor.suggestOnTriggerCharacters": true,
     "editor.tabCompletion": "on",
     "editor.wordBasedSuggestions": "allDocuments",
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "C_Cpp.default.compilerPath": "D:/midownload/winlibs-x86_64-posix-seh-gcc-15.1.0-mingw-w64msvcrt-12.0.0-r1/mingw64/bin/gcc.exe",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+    "C_Cpp.default.cppStandard": "gnu++17",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**"
+    ]
 }

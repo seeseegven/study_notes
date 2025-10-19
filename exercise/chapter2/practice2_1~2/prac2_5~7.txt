@@ -1,0 +1,32 @@
+T2.5:
+'a':字符
+L'a':宽字符
+"a":字符串
+L"a":宽字符串
+
+10:int整型
+10u:unsigned int
+10L:long
+10uL:unsigned long
+012:八进制，10
+0xC:十六进制，12
+
+3.14:double浮点型
+3.14f:float
+3.14L:long double
+
+10:int
+10u:unsigned
+10.:10.0
+10e-2:10*(10^(-2))=0.1
+
+T2.6：
+int month = 09, day = 07
+int month = 9, day = 7
+09错误，八进制不能>=8.
+
+T2.7:
+"Who goes with F/145rgus?\012" : 字符串，/145是e,/012是换行符
+3.14e1L:3.14*10long double
+1024f:错误，f不能跟在整数后面，1024.f
+3.14L:3.14,long double
