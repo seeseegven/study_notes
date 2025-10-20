@@ -85,7 +85,7 @@
 
 <font size=6>使用<font size=8>***git merge (branch name)***</font>来合并分支到当前分支 </font>
 
-<font size=6>使用<font size=8>***git remote add origin git@github.com:repo.git***</font>来使用ssh链接远程仓库</font>
+<font size=6>使用<font size=8>***git remote add origin `git@github.com:repo.git`***</font>来使用ssh链接远程仓库</font>
 
 <font size=6>使用<font size=8>***git push -u origin master***</font>来建立上游分支master并推送 </font>
 
@@ -113,3 +113,11 @@
 |--abort|冲突时放弃整个revert|
 
 # git ignore注释要单独写一行，不然不会生效。
+
+| 场景             | 推荐命令                                                    | 理由                     |
+| -------------- | ------------------------------------------------------- | ---------------------- |
+| 撤销 `git add`   | `git restore --staged <file>` 或 `git reset HEAD <file>` | 不改历史，只动暂存区             |
+| 工作区改坏了，想还原     | `git restore <file>`                                    | 不动 HEAD，只恢复工作文件        |
+| 提交信息写错，想重提     | `git reset --soft HEAD~1`                               | 提交变回暂存，改完再 commit      |
+| 最近几次提交想扔掉（未推送） | `git reset --hard <commit>`                             | 三棵树一起回退，**慎用**         |
+| 已推送的坏提交        | `git revert <commit>`                                   | 新建反向提交，**不改历史**，适合公共分支 |
