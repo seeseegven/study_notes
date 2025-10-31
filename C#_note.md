@@ -33,7 +33,47 @@
     $"{currentBulletsInput}" + "剩余子弹数量���：" + remainingBulletsInput;
     //换行整个"+"连接。
 
+|格|式|化|
+|--|--|--|
+|c|数字|￥
 
+
+|转|义|
+|--|--|
+|\ "|"|
+|\ '|'|
+|\ 0|空字符|
+|\r\n|回车换行|
+|\t|<font size=3>水平制表，tab效果|
+
+#### 源代码--CLS编译--CIL(通用中间语言)--CLR编译--机器码 
+
+
+<font size=5>Parse转换: *string* -> 其他类型：
+**wanted_type.Parse(string)**
+例如
+
+    string s1 = "18.0";
+    int convertedInt = int.Parse(s1); 
+    //报错，因为有点，如果是"18"就可以
+    float convertedFloat = float.Parse(s1);
+    //18.0
+
+<font size=5>任意类型转string，使用 **.ToString**，如
+
+    int num = 123456;
+    string strNum = num.ToString("N3");
+    string strNum2 = num.ToString();
+    Console.WriteLine(strNum); //123,456.000
+    Console.WriteLine(strNum2); //123456
+
+<font siez=5>小范围 -> 大范围，自动隐式转换； 大范围 -> 小范围，需显式转换。例如
+ 
+    byte b3 = 100;
+    int i3 = b3;//可以
+    int i4 = 100;
+    byte b4 = (byte)i4;
+    //需要显式转换，可能超范围
 
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
