@@ -75,6 +75,13 @@
     byte b4 = (byte)i4;
     //需要显式转换，可能超范围
 
++=这种快捷运算符不做自动类型提升
+
+#### C#的switch~case语句不允许穿透，必须加break;
+#### float不能进switch。
+
+<font size=5>C#里bool和float隔离，没有0/1->false/true的转换，bool只能逻辑判断。
+
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
   <tr><td colspan="2">2 格</td><td></td></tr>

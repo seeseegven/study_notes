@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using qtxTutorialC_Part05;
 # region 数字格式化
+using qtxTutorialC_Part05;
+
 Console.WriteLine("金额：{0:C5}", 123456.789); //金额：￥123,456.79
 Console.WriteLine("百分比：{0:P1}", 0.256); //百分比：25.6%
 Console.WriteLine("科学计数法：{0:E2}", 123456.7896); //科学计数法：1.235E+005
@@ -31,7 +34,9 @@ res += t / 10 % 10;
 res += t / 100 % 10;
 res += t / 1000 % 10;
 Console.WriteLine($"各位数字之和是：{res}");
+Class1.Main1();
 Console.ReadLine();
+
 
 
 
