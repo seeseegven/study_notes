@@ -82,6 +82,8 @@
 
 <font size=5>C#里bool和float隔离，没有0/1->false/true的转换，bool只能逻辑判断。
 
+<font size=5>虽然要求方法名称要大写，但似乎小写也没报错。
+
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
   <tr><td colspan="2">2 格</td><td></td></tr>

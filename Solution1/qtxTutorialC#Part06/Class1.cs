@@ -19,9 +19,14 @@ namespace qtxTutorialC_Part06
         }
 
         internal static void main2()
-        {
+        { 
             Random rand = new Random();
+            
             rand.Next(1,101);
+            string str = "abcde";
+            char a = '我';
+            bool res = str.Contains("b");
+            str = str.Remove(3);
         }
     }
     internal class  class2
