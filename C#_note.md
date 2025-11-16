@@ -84,6 +84,8 @@
 
 <font size=5>虽然要求方法名称要大写，但似乎小写也没报错。
 
+### 重载：方法名称相同，参数列表不同，根据参数类型或数量来区分不同的方法。详见sln的Part06部分的Class3.
+
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
   <tr><td colspan="2">2 格</td><td></td></tr>

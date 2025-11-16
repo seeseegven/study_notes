@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qtxTutorialC#Part05", "qtxT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qtxTutorialC#Part06", "qtxTutorialC#Part06\qtxTutorialC#Part06.csproj", "{1A06C128-B792-4FB9-8FAD-3F5DEDA3420E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qtxTutorialC#Part07", "qtxTutorialC#Part07\qtxTutorialC#Part07.csproj", "{51CC94A3-949E-4FF4-B84E-962EEFB38051}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1A06C128-B792-4FB9-8FAD-3F5DEDA3420E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A06C128-B792-4FB9-8FAD-3F5DEDA3420E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A06C128-B792-4FB9-8FAD-3F5DEDA3420E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CC94A3-949E-4FF4-B84E-962EEFB38051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CC94A3-949E-4FF4-B84E-962EEFB38051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CC94A3-949E-4FF4-B84E-962EEFB38051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CC94A3-949E-4FF4-B84E-962EEFB38051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
