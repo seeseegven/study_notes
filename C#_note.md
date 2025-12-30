@@ -86,6 +86,28 @@
 
 ### 重载：方法名称相同，参数列表不同，根据参数类型或数量来区分不同的方法。详见sln的Part06部分的Class3.
 
+    internal void ShowArray()
+    {
+        int[] a;
+        //声明
+        a = new int[5];
+        //初始化，感觉比c++麻烦
+        a[0] = 10;
+        //这倒是和C++一样
+        int[] b = new int[3] { 1, 2, 3 };
+        //也可以这样赋值，[]里的数字可以不写，写了就必须对应个数。
+
+        bool[] c = { true, false, false, true };
+        //也可以声明+初始化+赋值,但是不能拆成不加new的形式。
+    }
+
+<font size=5>**foreach (    int    i   in  array)**
+
+<font size=5>**foreach (元素类型(可以var自动推断) 变量名 in 数组名称)**
+
+<font size=5>**还能(int[])这样子转换obj为数组类型，第一次见😂**
+
+### 二维数组初始化居然是**int a[,]**,使用是**a[i,j]**，int a[,] = new int[3,4]
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
   <tr><td colspan="2">2 格</td><td></td></tr>
