@@ -108,6 +108,46 @@
 <font size=5>**还能(int[])这样子转换obj为数组类型，第一次见😂**
 
 ### 二维数组初始化居然是**int a[,]**,使用是**a[i,j]**，int a[,] = new int[3,4]
+
+    internal static void Add(params int[] nums)
+    {
+        int res = 0;
+        foreach (var item in nums)
+        {
+            res += item;
+        }
+        Console.WriteLine("和为：" + res);
+    }
+    para.Add(1, 2, 3, 4, 5);
+<font size=5> 如上代码所示，加了**params**则可以直接传入不定数量的值甚至**不传**；反之需要传入数组。
+
+
+<font size=5>**通用类型系统**定义了面向.NET框架的语言的数据类型，包括：
+`值类型：存储数据本身`
+`引用类型：数据的引用（地址）`
+
+    数据类型
+        |——值类型
+            |——结构
+                |——数值类型
+                |——bool
+                |——char
+            |——枚举
+        |——引用类型
+            |——接口
+            |——类
+                |——string
+                |——Array
+                |——委托
+
+---
+
+    方法的形参
+        |——值参数：按值传递
+        |——引用参数：按引用传递，要加ref前缀
+        |——输出参数：按引用传递，加out前缀，可以返回多个值
+        但要求out必须在方法内对形参进行赋值，ref传值必须已赋值
+
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
   <tr><td colspan="2">2 格</td><td></td></tr>

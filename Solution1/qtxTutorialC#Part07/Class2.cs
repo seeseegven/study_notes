@@ -32,7 +32,7 @@ namespace qtxTutorialC_Part07
             int[] b = new int[10];
             Array.Copy(a, b, 3);
             int[] c = (int[])a.Clone();
-
+            
         }
     }
 }
