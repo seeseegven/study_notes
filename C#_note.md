@@ -148,6 +148,35 @@
         |——输出参数：按引用传递，加out前缀，可以返回多个值
         但要求out必须在方法内对形参进行赋值，ref传值必须已赋值
 
+<font size=5>可以用string str = "" + num.**ToString()**;来避免拆装箱操作。如果直接拼接，会运行Concat(params object[] nums)，内部会进行拆装箱。
+<font size=5>字符串常量放字符串池里，新建字符串用引用
+
+    internal enum MoveDirection
+    {
+        ///<summary>
+        ///
+        ///<summary>
+        Up = 0,
+        Down = 1,
+        Left = 2,
+        Right = 3, 
+    }//枚举例子
+
+
+<font size=5>用'|'进行按位运算，要求加[Flags]和二进制赋值，例如
+
+    [Flags]
+    internal enum enumMeiju
+    {
+        tall = 1,
+        rich = 2,
+        handsome = 4,
+        white = 8
+    }
+
+<font size=5>用(enum_name)typeElement来将数字转化成enum类型，同理用(int)(enum.a | enum.b)进行enum->int。
+
+<font size=5>用Enum.Parse()
 <table>
   <tr><td colspan="3"> 整型 </td></tr>
   <tr><td colspan="2">2 格</td><td></td></tr>

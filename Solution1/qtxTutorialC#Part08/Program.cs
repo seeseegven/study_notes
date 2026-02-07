@@ -19,3 +19,5 @@ board = moveAndMerge.MoveLeft(board);
 moveAndMerge.PrintBoard(board);
 board = moveAndMerge.MoveRight(board);
 moveAndMerge.PrintBoard(board);
+moveAndMerge.Move(board, MoveDirection.Left);
+moveAndMerge.Move(board, MoveDirection.Right);

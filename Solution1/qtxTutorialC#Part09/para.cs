@@ -37,6 +37,13 @@ namespace qtxTutorialC_Part09
         {
             int res;
             bool re = int.TryParse("123abc", out res);
+            StringBuilder sb = new StringBuilder(10);
+            //可变字符串，但不是字符串，需要.ToString()转换
+            //sb.Remove()
+            sb.Append("World");
+            string str = sb.ToString();
+            str.Reverse();
+
         }
     }
 }

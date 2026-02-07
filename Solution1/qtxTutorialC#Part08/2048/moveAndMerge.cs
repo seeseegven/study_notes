@@ -203,5 +203,20 @@ namespace qtxTutorialC_Part08._2048
             }
             return board;
         }
+
+        internal static void Move(int[,] board, MoveDirection dir)
+        {
+            switch (dir)
+            {
+                case MoveDirection.Left:
+                    MoveLeft(board); break;
+                case MoveDirection.Right:
+                    MoveRight(board); break;
+                case MoveDirection.Up:
+                    MoveUp(board); break;
+                case MoveDirection.Down:
+                    MoveDown(board); break;
+            }
+        }
     }
 }
